@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Java Interview Imp Questions</string>
+    <string name="textview"><b>1) what are static blocks and static initalizers in Java ?\n </b>
+Static blocks or static initializers are used to initalize static fields in java. we declare static blocks when we
+want to intialize static fields in our class. Static blocks gets executed exactly once when the class is loaded.
+Static blocks are executed even before the constructors are executed.\n
+
+        <i><b>\n2) How to call one constructor from the other constructor ?\n</b></i>
+With in the same class if we want to call one constructor from other we use this() method. Based on the
+number of parameters we pass appropriate this() method is called.
+Restrictions for using this method :\n
+1) this must be the first statement in the constructor.\n
+2)we cannot use two this() methods in the constructor.\n
+
+        <b>\n3) What is method overriding in java ?\n</b>
+If we have methods with same signature (same name, same signature, same return type) in super class
+and subclass then we say subclass method is overridden by superclass. When to use overriding in java
+If we want same method with different behaviour in superclass and subclass then we go for overriding.
+When we call overridden method with subclass reference subclass method is called hiding the superclass
+method.\n
+
+        <b>\n4) What is super keyword in java ?\n</b>
+Variables and methods of super class can be overridden in subclass . In case of overriding , a subclass
+object call its own variables and methods. Subclass cannot access the variables and methods of
+superclass because the overridden variables or methods hides the methods and variables of super class.
+But still java provides a way to access super class members even if its members are overridden. Super is
+used to access superclass variables, methods, constructors.\n
+Super can be used in two forms :\n
+1) First form is for calling super class constructor.\n
+2) Second one is to call super class variables,methods.
+Super if present must be the first statement.\n
+<b>\n5) Difference between method overloading and method overriding in java ?\n</b>
+Method Overloading Method Overriding\n
+1) Method Overloading occurs with in the same
+class\n
+Method Overriding occurs between two classes superclass and subclass
+2) Since it involves with only one class inheritance
+is not involved.\n
+Since method overriding occurs between superclass and subclass inheritance is involved.\n
+3)In overloading return type need not be the same.\n 3) In overriding return type must be same.\n
+4) Parameters must be different when we do overloading\n
+4) Parameters must be same.\n
+5) Static polymorphism can be acheived using method overloading.\n
+5) Dynamic polymorphism can be acheived using method overriding.\n
+6) In overloading one method can’t hide the another.\n
+6) In overriding subclass method hides that of the superclass method.\n
+
+    </string>
+
+
+</resources>
